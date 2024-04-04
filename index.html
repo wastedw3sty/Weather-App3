@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@mondaycom/monday-sdk-js@1/dist/monday.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Weather Widget</title>
+</head>
+<body>
+    <div id="weather-widget">
+        <h1>NZ Weather Tracker</h1>
+<select id="boards">
+    <!-- Replace '12345' and '67890' with the actual board IDs from your monday.com account -->
+    <option value="6388863171">North Island</option>
+    <option value="6388863349">South Island</option>
+</select>
+    <div id="weather-display">
+        <!-- Weather information will be dynamically updated here -->
+        <p>Select a board to see the weather.</p>
+    </div>
+    <div id="temperature-toggle">
+    <label for="celsius">Celsius</label>
+    <input type="radio" id="celsius" name="temp-units" value="metric" checked>
+    <label for="fahrenheit">Fahrenheit</label>
+    <input type="radio" id="fahrenheit" name="temp-units" value="imperial">
+</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
